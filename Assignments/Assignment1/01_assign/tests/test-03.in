@@ -1,0 +1,5 @@
+This is a well chosen key. The attacker should have no knowledge of how it was chosen, and of course, should have no access to it.
+THis is the message to encrypt
+However, one-time-pad has one weakness. The key should never be used again. In other words, this second encrypted message
+and any further encrypted message makes the key weak and subject to attack.
+In other words: when using one-time-pad encryption, you should only encrpyt one message per key.

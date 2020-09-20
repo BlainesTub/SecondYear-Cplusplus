@@ -1,0 +1,4 @@
+Original key [                                                                                                    ]
+Original message [THISISTHEMESSAGETOENCRYPTBUTTHEKEYISNOTVERYSECURE]
+Encrypted [thisisthemessagetoencryptbutthekeyisnotverysecure]
+Decrypted [THISISTHEMESSAGETOENCRYPTBUTTHEKEYISNOTVERYSECURE]

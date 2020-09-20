@@ -1,0 +1,3 @@
+Original key [This is the key]
+Original message [This is the message to encrypt]
+Error: the length of the key [15] is smaller than the length of the message to encrypt [30]
