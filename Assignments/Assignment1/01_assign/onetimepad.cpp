@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-std::string onetimepad(std::string auth, std::string input)
+std::string onetimepad(std::string auth, std::string input) 
 {
     //ERROR CATCHER
     if (input.size() > auth.size())
@@ -16,7 +16,7 @@ std::string onetimepad(std::string auth, std::string input)
     std::string encrypted = input; //Set length of encrypted String.
     for (int i = 0; i < (int(input.size())); ++i)
     {
-        encrypted.at(i) = input.at(i) ^ auth.at(i);
+        encrypted.at(i) = input.at(i) ^ auth.at(i);   //encrypt input with XOR operator. 
     }
     return encrypted;
 }
@@ -35,17 +35,13 @@ int main()
     
     //Loop while input is valid
     while(std::getline(std::cin, message)){
-
-        
-        
         std::cout<<"Original message ["<< message << "]" << std::endl;
-        
         encrypted = onetimepad(key,message);  //encrypt the message
 
         {std::cout << "Encrypted ["; //print the encrypted message
             for (int i = 0; i < int(encrypted.size()); ++i)
             {
-                if (char(encrypted.at(i)) < 32 || char(encrypted.at(i) > 126))
+                if (char(encrypted.at(i)) < 32 || char(encrypted.at(i) > 126))   //If the character is unprintable, print the char as an int value instead.
                 {
                     std::cout << "(" << int(encrypted.at(i)) << ")";
                 }
@@ -61,8 +57,8 @@ int main()
         {std::cout << "Decrypted ["; //print the Decrypted message
             for (int i = 0; i < int(decrypted.size()); ++i)
             {
-                if (char(decrypted.at(i)) < 32 || char(decrypted.at(i) > 126))
-                {
+                if (char(decrypted.at(i)) < 32 || char(decrypted.at(i) > 126))  //Theoretically the decrypted message shouldn't have any 
+                {                                                             //unprintable characters, but this ensures they are seen.
                     std::cout << "(" << int(decrypted.at(i)) << ")";
                 }
                 else

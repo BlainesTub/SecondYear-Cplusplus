@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string s {};
+	
+    while (std::getline(std::cin, s)) {
+        std::cout << "Input line: " << s << std::endl;
+    }
+	
+    return 0;
+}
