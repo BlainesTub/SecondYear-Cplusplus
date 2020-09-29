@@ -1,4 +1,6 @@
 // add your personal information below, including your student id
+//Blaine Tubungbanua
+//V00918128
 
 #include <iostream>
 #include <string>

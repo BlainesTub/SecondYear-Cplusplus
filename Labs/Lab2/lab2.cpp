@@ -135,7 +135,7 @@ int main()
         }
         else
         {
-            std::cout << linelist.at(i) << ": " << freq << std::endl;
+            std::cout << linelist.at(i) << freq << std::endl;
         }
         bank.push_back(linelist.at(i));
         freq = 1;
