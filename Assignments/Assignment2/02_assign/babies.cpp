@@ -1,0 +1,278 @@
+// your name and student id go here
+
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <cassert>
+#include <sstream>
+#include <limits>
+
+/* Constants */
+
+// The first year covered by the dataset
+const int kFirstYear = 1920;
+
+// The number of years in the dataset
+const int kTotalYears = 100;
+
+
+struct BabyName_t {
+	//Baby name
+    std::string name;
+		
+	//The number of occurances of the name in each year.
+	//After this structure is initialized, element i of yearsCount
+	//will contain the number of babies with this name in year i.
+	//Note that the year at index i corresponds to the year kFirstYear + i
+	//(for example, yearsCount.at(6) will give the count for 1916 + 6 = 1922)
+	//For this BabyName_t structure to be valid, the number of elements in yearsCount
+	//must equal kTotalYears after the structure is initialized.
+    std::vector<unsigned int> yearsCount;
+	
+	//The total number of occurrances of this name over all years.
+    unsigned int total;
+    
+} ;
+
+
+// Verify that the total matches the counts, and exit if it does not.
+// (No need to modify this function)
+void Check_Baby(const BabyName_t& baby)
+{
+    unsigned int sum {0};
+
+    if (baby.yearsCount.size() != kTotalYears) {
+        std::cout << "There was an error reading baby [" << baby.name << "]. Only " <<  baby.yearsCount.size() << " years were read."  << std::endl;
+        exit(1);
+    }
+
+    for (unsigned int r: baby.yearsCount) {
+        sum+=r;
+    }
+    if (sum != baby.total) {
+        std::cout << "There was an error reading baby [" << baby.name << "]: the sum of yearsCount is inconsistent has [" << baby.total << "] expected [" << sum << "]" << std::endl;
+        exit(1);
+    }
+
+}
+std::string getFirstYear(const BabyName_t &baby){
+    int yearIndx = kFirstYear;
+    int firstCount;
+    std::string outputString;
+    for(auto year : baby.yearsCount){
+        
+        if(year>0){
+            firstCount = year;
+            outputString = std::to_string(yearIndx);
+            outputString += " ";
+            outputString += std::to_string(firstCount);
+            return outputString;
+        }
+        ++yearIndx;
+    }
+    return 0;
+}
+std::string getLastYear(const BabyName_t &baby){
+    int yearIndx = kFirstYear + kTotalYears -1;
+    int lastCount;
+    std::string outputString;
+    for(auto i = 99; i>= 0 ; i-- ){
+        if(baby.yearsCount.at(i) >0){
+            lastCount = baby.yearsCount.at(i);
+            outputString = std::to_string(yearIndx);
+            outputString += " ";
+            outputString += std::to_string(lastCount);
+            return outputString;
+        }
+        --yearIndx;
+    }
+    return 0;
+}
+std::string getMin(const BabyName_t &baby){
+    int yearIndx = kFirstYear;
+    int minyearIndx;
+    int min = 9999;
+    std::string outputString;
+    for(auto year : baby.yearsCount){
+        if(int(year) < min && int(year) != 0){
+            min = year;
+            minyearIndx = yearIndx;
+        }
+        ++yearIndx;
+    }
+    outputString = std::to_string(minyearIndx);
+    outputString += " ";
+    outputString += std::to_string(min);
+    return outputString;
+}
+std::string getMax(const BabyName_t &baby){
+    int yearIndx = kFirstYear;
+    int maxyearIndx;
+    int max = 0;
+    std::string outputString;
+    for(auto year : baby.yearsCount){
+        if(int(year) >= max){
+            max = year;
+            maxyearIndx = yearIndx;
+        }
+        ++yearIndx;
+    }
+    outputString = std::to_string(maxyearIndx);
+    outputString += " ";
+    outputString += std::to_string(max);
+    return outputString;
+
+}
+int getYears(const BabyName_t &baby){
+    int ticker = 0;
+    for(auto year : baby.yearsCount){
+        if(year > 0){
+            ++ticker;
+        }
+    }
+    return ticker;
+}
+
+void Print_Baby(const BabyName_t &baby)
+{
+
+    
+    //Find Avg
+    float average;
+    average = baby.total;
+    average = average/float(100);
+
+    //print everything
+    std::cout<<" Total: "<<baby.total<<std::endl;
+    std::cout<<" Years: "<<getYears(baby)<<std::endl;
+    std::cout<<" 2019: "<<baby.yearsCount.at(2019 - kFirstYear)<< std::endl;
+    std::cout<<" First: "<<getFirstYear(baby)<<std::endl;
+    std::cout<<" Last: "<<getLastYear(baby)<<std::endl;
+    std::cout<<" Min: "<<getMin(baby)<<std::endl;
+    std::cout<<" Max: "<<getMax(baby)<<std::endl;
+    std::cout<<" Avg: "<<average<<std::endl;
+}
+
+bool Find_Baby(const std::vector<BabyName_t>& name_list, const std::string& name, BabyName_t& output_baby)
+{
+    
+    for(auto nameBuffer : name_list){
+        if (nameBuffer.name == name){
+            output_baby = nameBuffer;
+            return 1;
+        }
+    }
+    return 0; 
+}
+void getName(std::string input, std::vector<BabyName_t> &babies, int babyLineIdx){
+std::string nameBuffer;
+
+//Go through each index of each line.
+for(unsigned long i=0; i<input.size(); ++i){
+    //Acquire the name
+    if(isalpha(input.at(i))){
+        nameBuffer.push_back(input.at(i));
+        }
+}
+
+babies.at(babyLineIdx).name = nameBuffer;
+}
+void getYearCount(std::string input, std::vector<BabyName_t> & babies, int babyLineIdx){
+    //Does not grab the last index, because it is not separated by a comma
+    //Go through each index of the line
+    //Indicate which field we are at
+    int fieldIndx = 1;
+    std::string parseBuffer;
+    for(unsigned long i=0; i<input.size(); ++i){
+        //If the input is a number, add it to the numberbuffer
+        if(isdigit(input.at(i))){
+            parseBuffer += input.at(i);   
+        }
+        //If the input is a comma, && Not first value, plug buffer into struct
+        if(input.at(i) == ','){
+            //If it's not the first index
+            if(fieldIndx !=1 ){
+                //std::cout<<"grab["<<parseBuffer<<"]";
+                babies.at(babyLineIdx).yearsCount.push_back(std::stoi(parseBuffer));
+                parseBuffer.clear();
+                //std::cout<<babies.at(babyLineIdx).yearsCount.at(fieldIndx-2)<<",";
+
+                
+            }
+            ++fieldIndx;
+        }
+        
+        
+    }
+    babies.at(babyLineIdx).total = std::stoi(parseBuffer);
+    //std::cout<<"SUM:"<<babies.at(babyLineIdx).total<<std::endl;
+    
+}
+std::vector<BabyName_t> Read_Babies(const std::string& inputFileName)
+{
+    std::vector<BabyName_t> babies;
+    std::ifstream inFile;
+    std::string input;
+    BabyName_t babyStruct;
+    inFile.open(inputFileName);
+    if(!inFile){     //ERROR if unable to open file
+        std::cout<<"Unable to open input file"<<std::endl;
+        exit(1);
+    }
+    int babyLineIdx =0;
+    
+    //while line input is valid
+    while(std::getline(inFile, input)){
+        //Create a BabyName_t struct in babies
+        babies.push_back(babyStruct);
+        
+        //gather fill structs
+        getName(input, babies, babyLineIdx); //Acquire Names
+        getYearCount(input,babies,babyLineIdx); //Plug numbers into yearsCount Vector
+        //return the final SUM
+
+
+        ++babyLineIdx;
+    }
+
+    return babies;
+}
+
+// do not modify anything beyond this line
+
+int main(int argc, char *argv[])
+{
+    if (argc != 2) {
+        std::cout << "Usage " << argv[0] << " <filename>" << std::endl;
+        exit(1);
+    }
+    std::string inputFileName = argv[1];
+
+    // read the babies
+    std::vector<BabyName_t> babies = Read_Babies(inputFileName);
+    // verify them
+    for(auto &baby: babies) {
+        Check_Baby(baby);
+    }
+
+    std::cout << "Read " << babies.size() << " babies."<< std::endl;
+
+    std::string name {};
+    while (getline(std::cin, name)) {
+
+        std::cout << name << std::endl;
+
+        // search and print the baby, if exists
+        BabyName_t baby {};
+        if (Find_Baby(babies, name, baby)) {
+            Print_Baby(baby);
+        } else {
+            std::cout << "Baby name [" << name << "] was not found" << std::endl;
+        
+        }
+    }
+
+    return 0;
+}
