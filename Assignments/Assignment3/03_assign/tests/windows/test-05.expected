@@ -1,0 +1,23 @@
+Input matrix. Size : 5 x 5
+ -  :   1 :   2 :  -  :  -  : 
+  1 :  -  : 2.5 :  -  :  -  : 
+  2 : 2.5 :  -  :  24 :  67 : 
+ -  :  -  :  24 :  -  : 100 : 
+ -  :  -  :  67 : 100 :  -  : 
+
+Input Adjacency list. Size : 5
+From City: A -> (B,1) (C,2) 
+From City: B -> (A,1) (C,2.5) 
+From City: C -> (A,2) (B,2.5) (D,24) (E,67) 
+From City: D -> (C,24) (E,100) 
+From City: E -> (C,67) (D,100) 
+
+Minimum Spanning Tree. Size : 5
+From City: A -> (B,1) (C,2) 
+From City: B -> (A,1) 
+From City: C -> (A,2) (D,24) (E,67) 
+From City: D -> (C,24) 
+From City: E -> (C,67) 
+
+Cost of original matrix: 196.5
+Cost of minimum spanning tree: 94

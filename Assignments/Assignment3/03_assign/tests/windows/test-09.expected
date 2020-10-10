@@ -1,0 +1,35 @@
+Input matrix. Size : 9 x 9
+ -  :   3 :  -  :   4 :  12 :  -  :  -  :  -  :  -  : 
+  3 :  -  :   5 :  -  :  10 :  -  :  -  :  -  :  -  : 
+ -  :   5 :  -  :  -  :  13 :   1 :  -  :  -  :  -  : 
+  4 :  -  :  -  :  -  :   6 :  -  :   2 :  -  :  -  : 
+ 12 :  10 :  13 :   6 :  -  :   7 :  11 :   8 :  -  : 
+ -  :  -  :   1 :  -  :   7 :  -  :  -  :  -  :  -  : 
+ -  :  -  :  -  :   2 :  11 :  -  :  -  :  -  :  -  : 
+ -  :  -  :  -  :  -  :   8 :  -  :  -  :  -  :   9 : 
+ -  :  -  :  -  :  -  :  -  :  -  :  -  :   9 :  -  : 
+
+Input Adjacency list. Size : 9
+From City: A -> (B,3) (D,4) (E,12) 
+From City: B -> (A,3) (C,5) (E,10) 
+From City: C -> (B,5) (E,13) (F,1) 
+From City: D -> (A,4) (E,6) (G,2) 
+From City: E -> (A,12) (B,10) (C,13) (D,6) (F,7) (G,11) (H,8) 
+From City: F -> (C,1) (E,7) 
+From City: G -> (D,2) (E,11) 
+From City: H -> (E,8) (I,9) 
+From City: I -> (H,9) 
+
+Minimum Spanning Tree. Size : 9
+From City: A -> (B,3) (D,4) 
+From City: B -> (A,3) (C,5) 
+From City: C -> (B,5) (F,1) 
+From City: D -> (A,4) (E,6) (G,2) 
+From City: E -> (D,6) (H,8) 
+From City: F -> (C,1) 
+From City: G -> (D,2) 
+From City: H -> (E,8) (I,9) 
+From City: I -> (H,9) 
+
+Cost of original matrix: 91
+Cost of minimum spanning tree: 38

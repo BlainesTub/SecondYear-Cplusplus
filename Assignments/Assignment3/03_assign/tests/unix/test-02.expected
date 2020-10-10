@@ -1,0 +1,14 @@
+Input matrix. Size : 2 x 2
+ -  :   4 : 
+  4 :  -  : 
+
+Input Adjacency list. Size : 2
+From City: A -> (B,4) 
+From City: B -> (A,4) 
+
+Minimum Spanning Tree. Size : 2
+From City: A -> (B,4) 
+From City: B -> (A,4) 
+
+Cost of original matrix: 4
+Cost of minimum spanning tree: 4

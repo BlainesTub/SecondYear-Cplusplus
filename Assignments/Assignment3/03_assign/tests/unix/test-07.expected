@@ -1,0 +1,29 @@
+Input matrix. Size : 7 x 7
+ -  :   8 :  -  :  -  :  -  :  -  :  -  : 
+  8 :  -  :  -  :   3 :  -  :   1 :  -  : 
+ -  :  -  :  -  :  -  :  -  :  -  :   8 : 
+ -  :   3 :  -  :  -  :  -  :  -  :  -  : 
+ -  :  -  :  -  :  -  :  -  :  -  :   1 : 
+ -  :   1 :  -  :  -  :  -  :  -  :   5 : 
+ -  :  -  :   8 :  -  :   1 :   5 :  -  : 
+
+Input Adjacency list. Size : 7
+From City: A -> (B,8) 
+From City: B -> (A,8) (D,3) (F,1) 
+From City: C -> (G,8) 
+From City: D -> (B,3) 
+From City: E -> (G,1) 
+From City: F -> (B,1) (G,5) 
+From City: G -> (C,8) (E,1) (F,5) 
+
+Minimum Spanning Tree. Size : 7
+From City: A -> (B,8) 
+From City: B -> (A,8) (D,3) (F,1) 
+From City: C -> (G,8) 
+From City: D -> (B,3) 
+From City: E -> (G,1) 
+From City: F -> (B,1) (G,5) 
+From City: G -> (C,8) (E,1) (F,5) 
+
+Cost of original matrix: 26
+Cost of minimum spanning tree: 26
