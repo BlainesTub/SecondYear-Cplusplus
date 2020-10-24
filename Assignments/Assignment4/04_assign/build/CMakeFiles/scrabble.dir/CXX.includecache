@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/main.cpp
+iostream
+-
+scrabble.hpp
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/scrabble.hpp
+cassert
+-
+unordered_set
+-
+algorithm
+-
+string
+-
+
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/scrabble.cpp
+iostream
+-
+string
+-
+set
+-
+algorithm
+-
+fstream
+-
+cassert
+-
+scrabble.hpp
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/scrabble.hpp
+
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/scrabble.hpp
+map
+-
+set
+-
+string
+-
+

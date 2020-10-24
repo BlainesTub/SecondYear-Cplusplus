@@ -1,0 +1,4 @@
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/CMakeFiles/rebuild_cache.dir
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/CMakeFiles/edit_cache.dir
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/CMakeFiles/scrabble.dir
+/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/CMakeFiles/test.dir

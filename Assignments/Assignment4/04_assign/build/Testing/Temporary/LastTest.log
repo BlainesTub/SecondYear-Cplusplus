@@ -1,0 +1,93 @@
+Start testing: Oct 24 15:39 PDT
+----------------------------------------------------------
+1/6 Testing: test01
+1/6 Test: test01
+Command: "/usr/bin/cmake" "-DEXE=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/scrabble" "-D" "ID=01" "-DLOC=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign" "-P" "/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/tester-scrabble.cmake"
+Directory: /home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build
+"test01" start time: Oct 24 15:39 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.60 sec
+----------------------------------------------------------
+Test Passed.
+"test01" end time: Oct 24 15:39 PDT
+"test01" time elapsed: 00:00:01
+----------------------------------------------------------
+
+2/6 Testing: test02
+2/6 Test: test02
+Command: "/usr/bin/cmake" "-DEXE=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/scrabble" "-D" "ID=02" "-DLOC=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign" "-P" "/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/tester-scrabble.cmake"
+Directory: /home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build
+"test02" start time: Oct 24 15:39 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.72 sec
+----------------------------------------------------------
+Test Passed.
+"test02" end time: Oct 24 15:39 PDT
+"test02" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: test03
+3/6 Test: test03
+Command: "/usr/bin/cmake" "-DEXE=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/scrabble" "-D" "ID=03" "-DLOC=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign" "-P" "/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/tester-scrabble.cmake"
+Directory: /home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build
+"test03" start time: Oct 24 15:39 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.71 sec
+----------------------------------------------------------
+Test Passed.
+"test03" end time: Oct 24 15:39 PDT
+"test03" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/6 Testing: test04
+4/6 Test: test04
+Command: "/usr/bin/cmake" "-DEXE=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/scrabble" "-D" "ID=04" "-DLOC=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign" "-P" "/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/tester-scrabble.cmake"
+Directory: /home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build
+"test04" start time: Oct 24 15:39 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.71 sec
+----------------------------------------------------------
+Test Passed.
+"test04" end time: Oct 24 15:39 PDT
+"test04" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: test05
+5/6 Test: test05
+Command: "/usr/bin/cmake" "-DEXE=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/scrabble" "-D" "ID=05" "-DLOC=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign" "-P" "/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/tester-scrabble.cmake"
+Directory: /home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build
+"test05" start time: Oct 24 15:39 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.72 sec
+----------------------------------------------------------
+Test Passed.
+"test05" end time: Oct 24 15:39 PDT
+"test05" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: test06
+6/6 Test: test06
+Command: "/usr/bin/cmake" "-DEXE=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build/scrabble" "-D" "ID=06" "-DLOC=/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign" "-P" "/home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/tester-scrabble.cmake"
+Directory: /home/btubungbanua/Documents/CSC116/CSC116/Assignments/Assignment4/04_assign/build
+"test06" start time: Oct 24 15:39 PDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.73 sec
+----------------------------------------------------------
+Test Passed.
+"test06" end time: Oct 24 15:39 PDT
+"test06" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 24 15:39 PDT
