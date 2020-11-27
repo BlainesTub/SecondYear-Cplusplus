@@ -1,0 +1,5 @@
+Enter a function f(x): Enter a value of x: 
+f(x) = 1 - x
+f(1) = 0
+f'(x) = 0 - 1
+f'(1) = -1

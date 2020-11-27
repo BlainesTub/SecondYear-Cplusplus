@@ -1,0 +1,5 @@
+Enter a function f(x): Enter a value of x: 
+f(x) = x^6
+f(1) = 1
+f'(x) = 6*1*x^5
+f'(1) = 6
