@@ -1,0 +1,61 @@
+Record ffd8 of length        0 at offset    51712
+Record ffe1 of length    15700 at offset    51714
+Record ffc4 of length      418 at offset    67416
+Record ffdb of length      132 at offset    67836
+Record ffc0 of length       17 at offset    67970
+Record ffda of length       12 at offset    67989
+Data starts at byte offset 68003
+Record ffd9 of length        0 at offset  1044235
+File contains 992525 bytes
+Recovering file: recovered-0000.jpg
+Record ffd8 of length        0 at offset  1044992
+Record ffe1 of length    18748 at offset  1044994
+Record ffc4 of length      418 at offset  1063744
+Record ffdb of length      132 at offset  1064164
+Record ffc0 of length       17 at offset  1064298
+Record ffda of length       12 at offset  1064317
+Data starts at byte offset 1064331
+Record ffd9 of length        0 at offset  2393206
+File contains 1348216 bytes
+Recovering file: recovered-0001.jpg
+Record ffd8 of length        0 at offset  2394624
+Record ffe1 of length    17736 at offset  2394626
+Record ffc4 of length      418 at offset  2412364
+Record ffdb of length      132 at offset  2412784
+Record ffc0 of length       17 at offset  2412918
+Record ffda of length       12 at offset  2412937
+Data starts at byte offset 2412951
+Record ffd9 of length        0 at offset  3377317
+File contains 982695 bytes
+Recovering file: recovered-0002.jpg
+Record ffd8 of length        0 at offset  3377664
+Record ffe1 of length    16372 at offset  3377666
+Record ffc4 of length      418 at offset  3394040
+Record ffdb of length      132 at offset  3394460
+Record ffc0 of length       17 at offset  3394594
+Record ffda of length       12 at offset  3394613
+Data starts at byte offset 3394627
+Record ffd9 of length        0 at offset  4362726
+File contains 985064 bytes
+Recovering file: recovered-0003.jpg
+Record ffd8 of length        0 at offset  4362752
+Record ffe1 of length    17120 at offset  4362754
+Record ffc4 of length      418 at offset  4379876
+Record ffdb of length      132 at offset  4380296
+Record ffc0 of length       17 at offset  4380430
+Record ffda of length       12 at offset  4380449
+Data starts at byte offset 4380463
+Record ffd9 of length        0 at offset  5010146
+File contains 647396 bytes
+Recovering file: recovered-0004.jpg
+Record ffd8 of length        0 at offset  5011968
+Record ffe1 of length    16368 at offset  5011970
+Record ffc4 of length      418 at offset  5028340
+Record ffdb of length      132 at offset  5028760
+Record ffc0 of length       17 at offset  5028894
+Record ffda of length       12 at offset  5028913
+Data starts at byte offset 5028927
+Record ffd9 of length        0 at offset  5698601
+File contains 686635 bytes
+Recovering file: recovered-0005.jpg
+Processed 6 photo(s).

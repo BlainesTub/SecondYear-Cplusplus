@@ -1,0 +1,15 @@
+Reading edges 
+Expected exception :0->1 edge does not exist
+Expected exception :2147483646->1 edge does not exist
+Graph . It has 0 vertices and 0 edges
+Print the graph using using vertices and successors
+Print the graph again using vertices and predecessors. Output is ordered by destination vertex
+
+Try some of the complex operations 
+
+Graph Transposed. It has 0 vertices and 0 edges
+Graph transposed of transposed: equal to original. It has 0 vertices and 0 edges
+Graph Inverted. It has 0 vertices and 0 edges
+
+Graph Try reachability of all vertices in g. First print graph: . It has 0 vertices and 0 edges
+

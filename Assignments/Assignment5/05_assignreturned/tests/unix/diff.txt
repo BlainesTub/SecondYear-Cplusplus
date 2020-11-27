@@ -1,0 +1,81 @@
+Graph Graph with default constructor and Default add edge. It |	Reading edges 
+							      >	1 2 1.2
+							      >	1 3 1.3
+							      >	2 3 2.3
+							      >	Expected exception :3->1 edge does not exist
+							      >	Expected exception :0->1 edge does not exist
+							      >	Graph . It has 3 vertices and 3 edges
+							      >	Vertex [1]
+Vertex [2]							Vertex [2]
+Vertex [3]							Vertex [3]
+Edge [2] -> [3] weight [-1]				      |	Edge [1] -> [2] weight [1.2]
+Insert some nodes into the graph			      |	Edge [1] -> [3] weight [1.3]
+Graph Graph. It has 6 vertices and 8 edges		      |	Edge [2] -> [3] weight [2.3]
+							      >	Print the graph using using vertices and successors
+							      >	Edge [1] -> [2] weight [1.2]
+							      >	Edge [1] -> [3] weight [1.3]
+							      >	Edge [2] -> [3] weight [2.3]
+							      >	Print the graph again using vertices and predecessors. Output
+							      >	Edge [1] -> [2] weight [1.2]
+							      >	Edge [1] -> [3] weight [1.3]
+							      >	Edge [2] -> [3] weight [2.3]
+							      >
+							      >	Try some of the complex operations 
+							      >
+							      >	Graph Transposed. It has 3 vertices and 3 edges
+Vertex [1]							Vertex [1]
+Vertex [2]							Vertex [2]
+Vertex [3]							Vertex [3]
+Vertex [4]						      |	Edge [2] -> [1] weight [1.2]
+Vertex [7]						      |	Edge [3] -> [1] weight [1.3]
+Vertex [9]						      |	Edge [3] -> [2] weight [2.3]
+Edge [1] -> [2] weight [5]				      |	Graph transposed of transposed: equal to original. It has 3 v
+Edge [1] -> [7] weight [3]				      <
+Edge [2] -> [3] weight [4.1]				      <
+Edge [2] -> [4] weight [0]				      <
+Edge [4] -> [2] weight [-1.4]				      <
+Edge [4] -> [4] weight [2.1]				      <
+Edge [4] -> [9] weight [-1.1]				      <
+Edge [7] -> [2] weight [3.4]				      <
+Verify some weights					      <
+Force some throws					      <
+Expected exception map::at				      <
+Make sure we can remove some nodes			      <
+Graph Graph after removal. It has 5 vertices and 7 edges      <
+Vertex [1]							Vertex [1]
+Vertex [2]							Vertex [2]
+Vertex [3]							Vertex [3]
+Vertex [4]						      |	Edge [1] -> [2] weight [1.2]
+Vertex [7]						      |	Edge [1] -> [3] weight [1.3]
+Edge [1] -> [2] weight [5]				      |	Edge [2] -> [3] weight [2.3]
+Edge [1] -> [7] weight [3]				      |	Graph Inverted. It has 3 vertices and 6 edges
+Edge [2] -> [3] weight [4.1]				      |	Vertex [1]
+Edge [2] -> [4] weight [0]				      |	Vertex [2]
+Edge [4] -> [2] weight [-1.4]				      |	Vertex [3]
+Edge [4] -> [4] weight [2.1]				      |	Edge [1] -> [1] weight [0]
+Edge [7] -> [2] weight [3.4]				      |	Edge [2] -> [1] weight [0]
+Print the graph using using vertices and successors	      |	Edge [2] -> [2] weight [0]
+Edge [1] -> [2] weight [5]				      |	Edge [3] -> [1] weight [0]
+							      >	Edge [3] -> [2] weight [0]
+							      >	Edge [3] -> [3] weight [0]
+							      >	Testing subgraph ... keeping
+							      >	 vertex 1
+							      >	Graph Result subraph. It has 0 vertices and 0 edges
+							      >
+							      >	Graph Try reachability of all vertices in g. First print grap
+							      >	Vertex [1]
+							      >	Vertex [2]
+							      >	Vertex [3]
+							      >	Edge [1] -> [2] weight [1.2]
+							      >	Edge [1] -> [3] weight [1.3]
+							      >	Edge [2] -> [3] weight [2.3]
+							      >
+							      >	edge 1 1 false
+							      >	edge 1 2 true
+							      >	edge 1 3 true
+							      >	edge 2 1 false
+							      >	edge 2 2 false
+							      >	edge 2 3 true
+							      >	edge 3 1 false
+							      >	edge 3 2 false
+							      >	edge 3 3 false

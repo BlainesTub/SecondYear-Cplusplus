@@ -1,0 +1,16 @@
+Capitals:
+Tokyo -> Ottawa -> Washington -> London -> Madrid -> Amsterdam -> Mexico City -> Stockholm -> 
+
+is Ottawa in the list? true
+is Brazilia in the list? false
+
+Capitals after removing London:
+Tokyo -> Ottawa -> Washington -> Madrid -> Amsterdam -> Mexico City -> Stockholm -> 
+
+Capitals after removing Tokyo:
+Ottawa -> Washington -> Madrid -> Amsterdam -> Mexico City -> Stockholm -> 
+
+Capitals after removing Stockholm:
+Ottawa -> Washington -> Madrid -> Amsterdam -> Mexico City -> 
+Print empty list:
+is anything in the list? false
