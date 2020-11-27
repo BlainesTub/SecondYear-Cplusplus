@@ -1,0 +1,5 @@
+Enter a function f(x): Enter a value of x: 
+f(x) = cos(x)
+f(0.5) = 0.877583
+f'(x) = -1*sin(x)*1
+f'(0.5) = -0.479426

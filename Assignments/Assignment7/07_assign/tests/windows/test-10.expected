@@ -1,0 +1,5 @@
+Enter a function f(x): Enter a value of x: 
+f(x) = log(x)
+f(6) = 1.79176
+f'(x) = 1/x
+f'(6) = 0.166667
