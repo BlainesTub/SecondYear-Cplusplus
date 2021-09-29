@@ -1,3 +1,3 @@
-# CSC116
-This is Blaine's Repository for CSC-116: Fundamentals of Programming with Engineering Applications II (C++)
-It is synchronized the uvic linux server for testing.
+# cplusplus with dangerman
+This is Blaine's Repository for cplusplus with dangerman: Fundamentals of Programming with Engineering Applications II (C++)
+It is synchronized the school linux server for testing.
